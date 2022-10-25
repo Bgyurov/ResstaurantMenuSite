@@ -22,7 +22,7 @@
 }
 
 li a {
-    color: #333;
+    color: rgb(233, 139, 17);
 }
 
 .big-text {
@@ -56,4 +56,14 @@ a.btn-third {
     border-radius: 20px;
     background-color: darkorange;
     color: #fff;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
 }
