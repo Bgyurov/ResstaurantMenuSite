@@ -37,10 +37,13 @@
                       
                         <li><a href="contacts.html ">Контакти</a></li>
 
+                      <li><a id="darkbtn " onclick="solve() ">Darkmode</a>  
                     </ul>
                 </div>
             </div>
         </nav>
+        
+        
 
         <div class="container ">
             <div class="row ">
@@ -163,7 +166,7 @@
 </div>
 
 <div class="col-sm-6 ">
-    <img src="skaridi.png " class="img-responsive ">
+    <img src="images/skaridi.png " class="img-responsive ">
 </div>
 
 <!------------------------------->
@@ -203,6 +206,26 @@
 </div>
 </div>
 </div>
+
+<script>
+      let btn = document.getElementById("darkbtn ");
+      btn.addEventListener('click',onChange)
+
+
+      function onChange(params) {
+      
+        if(btn.textContent == 'Darkmode'){
+            document.body.className = "dark-mode ";
+            btn.textContent = 'Lightmode'
+        }else{
+
+            document.body.className = "light-mode ";
+            btn.textContent = 'Darkmode'
+        }
+
+        }
+     
+  </script>
 
 
 </body>
